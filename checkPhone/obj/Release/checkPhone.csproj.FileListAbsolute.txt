@@ -1,0 +1,41 @@
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Release\checkPhone.exe.config
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.Form1.resources
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.Properties.Resources.resources
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.csproj.GenerateResource.Cache
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Release\checkPhone.exe
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Release\checkPhone.pdb
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.exe
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.pdb
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Release\checkPhone.csprojResolveAssemblyReference.cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.0\checkPhone\bin\Release\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.0\checkPhone\obj\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.0\checkPhone\obj\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Release\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.csprojResolveAssemblyReference.cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.Form1.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.Properties.Resources.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Release\checkPhone.csproj.GenerateResource.Cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\bin\Release\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\bin\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\bin\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.csprojResolveAssemblyReference.cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.Form1.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.Properties.Resources.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.csproj.GenerateResource.Cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.2\checkPhone\obj\Release\checkPhone.Form2.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\bin\Release\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\bin\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\bin\Release\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.csprojResolveAssemblyReference.cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.Form1.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.Form2.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.Properties.Resources.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.csproj.GenerateResource.Cache

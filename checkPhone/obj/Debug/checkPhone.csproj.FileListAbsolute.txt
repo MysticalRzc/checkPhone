@@ -1,0 +1,18 @@
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Debug\checkPhone.exe.config
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Debug\checkPhone.exe
+E:\Visual Studio\C#\checkPhone\checkPhone\bin\Debug\checkPhone.pdb
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.Properties.Resources.resources
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.csproj.GenerateResource.Cache
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.exe
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.pdb
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.csprojResolveAssemblyReference.cache
+E:\Visual Studio\C#\checkPhone\checkPhone\obj\Debug\checkPhone.Form1.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Debug\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Debug\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\bin\Debug\checkPhone.pdb
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.csprojResolveAssemblyReference.cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.Form1.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.Properties.Resources.resources
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.1\checkPhone\obj\Debug\checkPhone.csproj.GenerateResource.Cache
