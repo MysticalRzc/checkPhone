@@ -39,3 +39,6 @@ C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Rele
 C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.Form2.resources
 C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.Properties.Resources.resources
 C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhone2.3\checkPhone\obj\Release\checkPhone.csproj.GenerateResource.Cache
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhoneGit\checkPhone\bin\Release\checkPhone.exe.config
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhoneGit\checkPhone\obj\Release\checkPhone.exe
+C:\Users\RZC\Desktop\手机后壳鉴定\coding\checkPhoneGit\checkPhone\obj\Release\checkPhone.pdb
