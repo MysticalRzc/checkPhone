@@ -32,7 +32,7 @@ namespace checkPhone
 
             ofd.InitialDirectory = @"C:\Users\RZC\Desktop\手机后壳鉴定\Image";
             ofd.Title = "打开图像文件";
-            ofd.Filter = "jpg file(*.jpg)|*.jpg|bmp file(*.bmp)|*.bmp";
+            ofd.Filter = "all file(*.*)|*.*|jpg file(*.jpg)|*.jpg|bmp file(*.bmp)|*.bmp";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 return new Bitmap(ofd.FileName);
@@ -159,6 +159,7 @@ namespace checkPhone
         public int findPoint(Bitmap processedImage, int[,] matrixImage, int heightImage, int widthImage, int size, int threshold)
         {
             int hasPoint = 0;
+            List<ListViewItem> list = new List<ListViewItem>();
             int[,] matrixResult = new int[heightImage, widthImage];
             int[,] map1 = new int[heightImage / size + 1, widthImage / size + 1];
             int[,] map2 = new int[heightImage / size + 1, widthImage / size + 1];

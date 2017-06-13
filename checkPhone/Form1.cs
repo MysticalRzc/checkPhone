@@ -23,6 +23,7 @@ namespace checkPhone
         private int heightImage;
         private int widthImage;
         private int[,] matrixImage = null;
+        private Thread thread = null;
         FileInfo[] fileInfor = null;
 
         public Form1()
@@ -80,7 +81,6 @@ namespace checkPhone
                     if (hasLine != 0)
                     {
                         addImageToList(item.FullName, ref index, item.Name + " 存在划痕");
-
                         DateTime dt = DateTime.Now;
                         originalImage.Save(@"C:\Users\RZC\Desktop\手机后壳鉴定\save\" + string.Format("{0:yyyy-MM-dd-HH-mm-ss-ffff}", dt) + "划痕原图.jpg");
                         processedImage.Save(@"C:\Users\RZC\Desktop\手机后壳鉴定\save\" + string.Format("{0:yyyy-MM-dd-HH-mm-ss-ffff}", dt) + "划痕结果图.jpg");
@@ -112,10 +112,9 @@ namespace checkPhone
         }
         private void button4_Click_1(object sender, EventArgs e)
         {
-            Thread t = new Thread(checkAll);
-            t.SetApartmentState(ApartmentState.STA);
-            t.Start();
-
+            thread = new Thread(checkAll);
+            thread.SetApartmentState(ApartmentState.STA);
+            thread.Start();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -301,7 +300,8 @@ namespace checkPhone
                             {
                                 count++;
                                 hasLine++;
-                                resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + Math.Cos(Math.PI * k / 180) * 5 * value), (int)(j + Math.Sin(Math.PI * k / 180) * 5 * value));
+                                //resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + Math.Cos(Math.PI * k / 180) * 5 * value), (int)(j + Math.Sin(Math.PI * k / 180) * 5 * value));
+                                resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + 1), (int)(j + 1));
                             }
                         }
                     }
@@ -328,6 +328,32 @@ namespace checkPhone
             int index = this.listView1.SelectedItems[0].Index;
             textBox1.AppendText(index + " ");
             pictureBox2.Image = imageList1.Images[index];
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (thread != null)
+                thread.Abort();
+        }
+        private void addInforToList(List<ListViewItem> list)
+        {
+            listView1.Clear();
+            for (int i = 0; i < list.Count; i++)
+            {
+                listView2.Items.Add(list[i]);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {    
+            List<ListViewItem> list = new List<ListViewItem>();
+            for(int i = 0;i< 5;i++)
+            {
+                ListViewItem lvi = new ListViewItem("a");
+                lvi.SubItems.Add("asdf");
+                list.Add(lvi);
+            }
+            addInforToList(list);
         }
     }
 }
