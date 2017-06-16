@@ -32,6 +32,7 @@ namespace checkPhone
 
             ofd.InitialDirectory = @"C:\Users\RZC\Desktop\手机后壳鉴定\Image";
             ofd.Title = "打开图像文件";
+            ofd.ReadOnlyChecked = true;
             ofd.Filter = "all file(*.*)|*.*|jpg file(*.jpg)|*.jpg|bmp file(*.bmp)|*.bmp";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
@@ -102,7 +103,7 @@ namespace checkPhone
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            BitmapData data = resultImage.LockBits(new Rectangle(0, 0, widthImage, heightImage), ImageLockMode.ReadWrite, PixelFormat.Format32bppArgb);
+            BitmapData data = resultImage.LockBits(new Rectangle(0, 0, widthImage, heightImage), ImageLockMode.ReadWrite, PixelFormat.Format32bppRgb);
             unsafe
             {
                 byte* point = (byte*)(data.Scan0);
@@ -210,6 +211,10 @@ namespace checkPhone
                 {
                     for (int j = 0; j < width; j++)
                     {
+                        //if(map2[i,j] == 1)
+                        //{
+                        //    drawPoint(matrixResult,matrixImage,i,j,matrixImage[i,j]);
+                        //}
                         if (map2[i, j] == 1)
                             for (int k = i * size; k < (i + 2) * size && k < heightImage; k++)
                                 for (int l = j * size; l < (j + 2) * size && l < widthImage; l++)
@@ -227,6 +232,10 @@ namespace checkPhone
                     this.matrixToImage(processedImage, matrixResult, heightImage, widthImage);
             }
             return hasPoint;
+        }
+        private void drawPoint(int[,] matrixResult,int[,] matrixImage,int x,int y,int value)
+        {
+            
         }
         public TimeSpan binarizationMatrix(int[,] processedMatrix, int heightImage, int widthImage, int size, int threshold)
         {

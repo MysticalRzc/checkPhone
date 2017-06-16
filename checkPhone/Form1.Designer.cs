@@ -35,7 +35,6 @@
             this.labelImageHeight = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -66,11 +65,13 @@
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.listView2 = new System.Windows.Forms.ListView();
-            this.button5 = new System.Windows.Forms.Button();
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.button5 = new System.Windows.Forms.Button();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -82,6 +83,8 @@
             this.二值化.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -138,16 +141,6 @@
             this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 7;
             this.label3.Text = "图片高：";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(111, 17);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(216, 301);
-            this.textBox1.TabIndex = 8;
             // 
             // label4
             // 
@@ -286,7 +279,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.labelImageWidth);
             this.groupBox1.Controls.Add(this.labelImageHeight);
             this.groupBox1.Controls.Add(this.label2);
@@ -339,9 +331,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(654, 475);
+            this.button2.Location = new System.Drawing.Point(654, 588);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 64);
+            this.button2.Size = new System.Drawing.Size(92, 32);
             this.button2.TabIndex = 54;
             this.button2.Text = "点痕一键检测";
             this.button2.UseVisualStyleBackColor = true;
@@ -410,9 +402,9 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(546, 475);
+            this.button3.Location = new System.Drawing.Point(546, 588);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(92, 64);
+            this.button3.Size = new System.Drawing.Size(92, 32);
             this.button3.TabIndex = 54;
             this.button3.Text = "划痕一键检测";
             this.button3.UseVisualStyleBackColor = true;
@@ -428,9 +420,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(546, 556);
+            this.button4.Location = new System.Drawing.Point(546, 626);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 111);
+            this.button4.Size = new System.Drawing.Size(200, 41);
             this.button4.TabIndex = 66;
             this.button4.Text = "全自动检测";
             this.button4.UseVisualStyleBackColor = true;
@@ -440,10 +432,10 @@
             // 
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox2.Location = new System.Drawing.Point(384, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(384, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(362, 335);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(362, 332);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
@@ -488,16 +480,6 @@
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(546, 432);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 27);
-            this.button5.TabIndex = 69;
-            this.button5.Text = "装填数据";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "序号";
@@ -517,11 +499,57 @@
             this.columnHeader11.Text = "疾病坐标";
             this.columnHeader11.Width = 93;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(546, 432);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(200, 27);
+            this.button5.TabIndex = 69;
+            this.button5.Text = "线条检测";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Location = new System.Drawing.Point(546, 554);
+            this.numericUpDown2.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(92, 21);
+            this.numericUpDown2.TabIndex = 70;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
+            // numericUpDown3
+            // 
+            this.numericUpDown3.Location = new System.Drawing.Point(654, 554);
+            this.numericUpDown3.Maximum = new decimal(new int[] {
+            20000,
+            0,
+            0,
+            0});
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(92, 21);
+            this.numericUpDown3.TabIndex = 71;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            100,
+            0,
+            0,
+            0});
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1121, 679);
+            this.Controls.Add(this.numericUpDown3);
+            this.Controls.Add(this.numericUpDown2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button3);
@@ -540,6 +568,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "手机外壳瑕疵检测系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseWheel);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
@@ -554,6 +583,8 @@
             this.二值化.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -567,7 +598,7 @@
         private System.Windows.Forms.Label labelImageHeight;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        public static System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
@@ -603,6 +634,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown numericUpDown3;
     }
 }
 

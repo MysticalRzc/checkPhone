@@ -30,6 +30,25 @@ namespace checkPhone
         {
             CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
+            this.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseWheel);
+            pictureBox2.BringToFront();
+        }
+        private void panel1_MouseWheel(object sender, System.Windows.Forms.MouseEventArgs e)
+        {
+            // MessageBox.Show("asd");
+            if (pictureBox2.Image != null)
+            {
+                if (e.Delta > 0) //放大图片
+                {
+                    pictureBox2.Size = new Size(pictureBox2.Width + 50, pictureBox2.Height + 50);
+                }
+                else
+                {  //缩小图片
+                    pictureBox2.Size = new Size(pictureBox2.Width - 50, pictureBox2.Height - 50);
+                }
+                //设置图片在窗体居中
+                // pictureBox2.Location = new Point((this.Width - pictureBox2.Width) / 2, (this.Height - pictureBox2.Height) / 2);
+            }
         }
         private void addImageToList(String path, ref int index, String imageName)
         {
@@ -91,7 +110,6 @@ namespace checkPhone
                         this.recoverImage();
                         this.makeMatrix();
                         int hasPoint = tools.findPoint(processedImage, matrixImage, heightImage, widthImage, size, threshold);
-
                         if (hasPoint == 1)
                         {
                             addImageToList(item.FullName, ref index, item.Name + " 存在点痕");
@@ -300,8 +318,8 @@ namespace checkPhone
                             {
                                 count++;
                                 hasLine++;
-                                //resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + Math.Cos(Math.PI * k / 180) * 5 * value), (int)(j + Math.Sin(Math.PI * k / 180) * 5 * value));
-                                resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + 1), (int)(j + 1));
+                                resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + Math.Cos(Math.PI * k / 180) * 5 * value), (int)(j + Math.Sin(Math.PI * k / 180) * 5 * value));
+                                //resultGraph.DrawLine(new Pen(Color.Black, 0), i, j, (int)(i + 1), (int)(j + 1));
                             }
                         }
                     }
@@ -345,15 +363,22 @@ namespace checkPhone
         }
 
         private void button5_Click(object sender, EventArgs e)
-        {    
-            List<ListViewItem> list = new List<ListViewItem>();
-            for(int i = 0;i< 5;i++)
+        {
+            if (originalImage == null)
             {
-                ListViewItem lvi = new ListViewItem("a");
-                lvi.SubItems.Add("asdf");
-                list.Add(lvi);
+                MessageBox.Show("请读取图片");
+                return;
             }
-            addInforToList(list);
+            int imageWidth = widthImage;
+            int imageHeight = heightImage;
+            this.recoverImage();
+            this.makeMatrix();
+
+            Card card = new Card(processedImage, matrixImage, imageWidth, imageHeight);
+            FeedBack feedBack = card.check();
+
+            pictureBox2.Image = feedBack.map;
+            addInforToList(feedBack.list);
         }
     }
 }
