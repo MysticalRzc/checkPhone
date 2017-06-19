@@ -309,7 +309,7 @@ namespace checkPhone
                     if (matrixImage[j, i] < 20)
                     {
                         int count = 0;
-                        for (int k = 0; k < 360; k += 20)
+                        for (int k = 0; k < 360; k += 10)
                         {
                             if (count > 4)
                                 break;
@@ -371,7 +371,7 @@ namespace checkPhone
             }
             int imageWidth = widthImage;
             int imageHeight = heightImage;
-            this.recoverImage();
+          //  this.recoverImage();
             this.makeMatrix();
 
             Card card = new Card(processedImage, matrixImage, imageWidth, imageHeight);

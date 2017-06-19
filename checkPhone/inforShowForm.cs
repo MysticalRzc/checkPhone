@@ -10,18 +10,16 @@ using System.Windows.Forms;
 
 namespace checkPhone
 {
-    public partial class Form2 : Form
+    public partial class InforShowForm : Form
     {
-        public Form2()
+        public InforShowForm()
         {
             InitializeComponent();
         }
-        public Form2(Bitmap bitMap,String title)
+        public void inforShow(String infor)
         {
-            InitializeComponent();
-            pictureBox1.Image = bitMap;
-            pictureBox1.Refresh();
-            this.Text = title;
+            this.Show();
+            textBox1.AppendText(infor);
         }
     }
 }
