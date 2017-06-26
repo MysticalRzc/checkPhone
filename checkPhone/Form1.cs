@@ -374,7 +374,7 @@ namespace checkPhone
           //  this.recoverImage();
             this.makeMatrix();
 
-            Card card = new Card(processedImage, matrixImage, imageWidth, imageHeight);
+            Natenna card = new Natenna(processedImage, matrixImage, imageWidth, imageHeight);
             FeedBack feedBack = card.check();
 
             pictureBox2.Image = feedBack.map;

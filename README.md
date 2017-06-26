@@ -6,3 +6,6 @@ checkPhone1.0
 checkPhone3.0
 	增加疾病显示窗口
 	增加缝隙，划痕检测定位算法
+checkPhone 3.1
+	增加了划痕搜索算法
+	仍需要完成划痕校验算法

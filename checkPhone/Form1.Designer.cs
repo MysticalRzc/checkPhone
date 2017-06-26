@@ -73,6 +73,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -86,6 +89,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -163,7 +169,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(17, 20);
+            this.button9.Location = new System.Drawing.Point(6, 31);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 23);
             this.button9.TabIndex = 43;
@@ -173,7 +179,7 @@
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(108, 23);
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 66);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -289,9 +295,9 @@
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button10);
             this.groupBox1.Controls.Add(this.button11);
-            this.groupBox1.Location = new System.Drawing.Point(207, 344);
+            this.groupBox1.Location = new System.Drawing.Point(299, 345);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(333, 324);
+            this.groupBox1.Size = new System.Drawing.Size(336, 318);
             this.groupBox1.TabIndex = 60;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "main";
@@ -302,16 +308,16 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(210, 289);
+            this.textBox1.Size = new System.Drawing.Size(213, 289);
             this.textBox1.TabIndex = 50;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.numericUpDown1);
             this.groupBox4.Controls.Add(this.button9);
-            this.groupBox4.Location = new System.Drawing.Point(546, 355);
+            this.groupBox4.Location = new System.Drawing.Point(640, 355);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 61);
+            this.groupBox4.Size = new System.Drawing.Size(93, 126);
             this.groupBox4.TabIndex = 63;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "图像压缩";
@@ -324,9 +330,9 @@
             this.groupBox5.Controls.Add(this.numericUpDown4);
             this.groupBox5.Controls.Add(this.numericUpDown8);
             this.groupBox5.Controls.Add(this.button8);
-            this.groupBox5.Location = new System.Drawing.Point(12, 341);
+            this.groupBox5.Location = new System.Drawing.Point(13, 7);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(189, 132);
+            this.groupBox5.Size = new System.Drawing.Size(215, 134);
             this.groupBox5.TabIndex = 64;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "点痕检测";
@@ -342,7 +348,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(654, 588);
+            this.button2.Location = new System.Drawing.Point(641, 564);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(92, 32);
             this.button2.TabIndex = 54;
@@ -358,7 +364,7 @@
             this.二值化.Controls.Add(this.numericUpDown5);
             this.二值化.Controls.Add(this.label7);
             this.二值化.Controls.Add(this.numericUpDown7);
-            this.二值化.Location = new System.Drawing.Point(12, 497);
+            this.二值化.Location = new System.Drawing.Point(6, 12);
             this.二值化.Name = "二值化";
             this.二值化.Size = new System.Drawing.Size(189, 171);
             this.二值化.TabIndex = 65;
@@ -413,7 +419,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(546, 588);
+            this.button3.Location = new System.Drawing.Point(641, 526);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 32);
             this.button3.TabIndex = 54;
@@ -431,9 +437,9 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(546, 626);
+            this.button4.Location = new System.Drawing.Point(640, 602);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 41);
+            this.button4.Size = new System.Drawing.Size(93, 65);
             this.button4.TabIndex = 66;
             this.button4.Text = "全自动检测";
             this.button4.UseVisualStyleBackColor = true;
@@ -512,9 +518,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(546, 432);
+            this.button5.Location = new System.Drawing.Point(6, 188);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 27);
+            this.button5.Size = new System.Drawing.Size(99, 40);
             this.button5.TabIndex = 69;
             this.button5.Text = "线条检测";
             this.button5.UseVisualStyleBackColor = true;
@@ -522,7 +528,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(546, 554);
+            this.numericUpDown2.Location = new System.Drawing.Point(126, 216);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             20000,
             0,
@@ -539,7 +545,7 @@
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(654, 554);
+            this.numericUpDown3.Location = new System.Drawing.Point(126, 189);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             20000,
             0,
@@ -554,21 +560,52 @@
             0,
             0});
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(11, 344);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(282, 323);
+            this.tabControl1.TabIndex = 51;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.Controls.Add(this.groupBox5);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(274, 297);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "tabPage1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.二值化);
+            this.tabPage2.Controls.Add(this.numericUpDown3);
+            this.tabPage2.Controls.Add(this.numericUpDown2);
+            this.tabPage2.Controls.Add(this.button5);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(274, 297);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1121, 679);
-            this.Controls.Add(this.numericUpDown3);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.listView2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.二值化);
-            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox2);
@@ -596,6 +633,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -647,6 +687,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
     }
 }
 
